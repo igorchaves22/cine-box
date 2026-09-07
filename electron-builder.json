@@ -1,0 +1,17 @@
+{
+    "appId": "com.igor.cinebox",
+    "productName": "CineBox",
+    "directories": {
+        "output": "release"
+    },
+    "files": ["dist/**/*", "!dist/**/*.map", "package.json"],
+    "electronLanguages": ["en-US"],
+    "win": {
+        "target": "nsis"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true,
+        "perMachine": false
+    }
+}

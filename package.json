@@ -1,0 +1,41 @@
+{
+    "name": "cine-box",
+    "version": "1.0.0",
+    "description": "CineBox is an app for managing and playing your own library of movies and series.",
+    "keywords": [
+        "media-manager",
+        "movies",
+        "series"
+    ],
+    "author": {
+        "name": "Igor Gabriel Vieira Chaves",
+        "email": "contato.igorgabriel@hotmail.com",
+        "url": "https://github.com/igorchaves22"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/igorchaves22/cine-box"
+    },
+    "homepage": "https://github.com/igorchaves22/cine-box#readme",
+    "main": "dist/main.js",
+    "type": "commonjs",
+    "engines": {
+        "node": ">=24.19"
+    },
+    "packageManager": "pnpm@12.3.4",
+    "private": true,
+    "scripts": {
+        "postinstall": "node node_modules/electron/install.js",
+        "build": "tsc && copyfiles -u 1 \"src/index.html\" dist",
+        "dev": "pnpm build && electron .",
+        "package": "pnpm build && electron-builder"
+    },
+    "devDependencies": {
+        "@types/node": "^26.4.1",
+        "copyfiles": "^2.4.1",
+        "electron": "^44.2.0",
+        "electron-builder": "^26.15.3",
+        "typescript": "^7.0.2"
+    }
+}
