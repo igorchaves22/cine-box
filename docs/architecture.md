@@ -11,5 +11,5 @@ This project is a self-contained desktop application responsible for managing an
 | ---------------------- | -------------------------------- |
 | App foundation         | Electron                         |
 | Primary language       | TypeScript                       |
-| Interface              | HTML                             |
+| Interface              | Vite + ReactJS                   |
 | Linting and formatting | EditorConfig + ESLint + Prettier |

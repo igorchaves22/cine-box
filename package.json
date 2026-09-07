@@ -18,7 +18,7 @@
         "url": "https://github.com/igorchaves22/cine-box"
     },
     "homepage": "https://github.com/igorchaves22/cine-box#readme",
-    "main": "dist/main.js",
+    "main": "dist/main/index.js",
     "type": "commonjs",
     "engines": {
         "node": ">=24.19"
@@ -27,25 +27,38 @@
     "private": true,
     "scripts": {
         "postinstall": "node node_modules/electron/install.js",
-        "build": "tsc && copyfiles -u 1 \"src/index.html\" dist",
-        "dev": "pnpm build && electron .",
+        "build": "electron-vite build",
+        "dev": "electron-vite dev",
         "package": "pnpm build && electron-builder",
         "lint:check": "eslint . && prettier . --check",
         "lint:fix": "eslint . --fix && prettier . --write"
     },
+    "dependencies": {
+        "react": "^19.2.8",
+        "react-dom": "^19.2.8"
+    },
     "devDependencies": {
         "@eslint/js": "^9.39.5",
+        "@types/eslint-plugin-jsx-a11y": "^6.10.1",
         "@types/node": "^26.4.1",
-        "copyfiles": "^2.4.1",
+        "@types/react": "^19.2.18",
+        "@types/react-dom": "^19.2.4",
+        "@vitejs/plugin-react": "^6.0.5",
         "electron": "^44.2.0",
         "electron-builder": "^26.15.3",
+        "electron-vite": "^5.0.0",
         "eslint": "^9.39.5",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-prettier": "^5.5.6",
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-plugin-react-hooks": "^6.1.1",
+        "eslint-plugin-react-refresh": "^0.5.4",
         "globals": "^17.11.0",
         "prettier": "^3.9.6",
         "typescript": "^6.0.3",
-        "typescript-eslint": "^8.67.0"
+        "typescript-eslint": "^8.67.0",
+        "vite": "^8.2.1"
     }
 }
