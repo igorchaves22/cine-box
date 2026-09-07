@@ -21,8 +21,10 @@ pnpm install
 
 Available commands for running the project:
 
-| Command        | What it does                                                            |
-| -------------- | ----------------------------------------------------------------------- |
-| `pnpm build`   | Compiles the project without generating an installer                    |
-| `pnpm dev`     | Compiles the project and runs the application in development mode       |
-| `pnpm package` | Compiles the project and generates the distribution files in `release/` |
+| Command           | What it does                                                                                |
+| ----------------- | ------------------------------------------------------------------------------------------- |
+| `pnpm build`      | Compiles the project without generating an installer                                        |
+| `pnpm dev`        | Compiles the project and runs the application in development mode                           |
+| `pnpm package`    | Compiles the project and generates the distribution files in `release/`                     |
+| `pnpm lint:check` | Checks whether the code follows the linting and formatting rules without modifying anything |
+| `pnpm lint:fix`   | Automatically fixes linting and formatting issues whenever possible                         |

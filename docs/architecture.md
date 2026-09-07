@@ -7,8 +7,9 @@ This project is a self-contained desktop application responsible for managing an
 
 **Stack**
 
-| Layer            | Technology |
-| ---------------- | ---------- |
-| App foundation   | Electron   |
-| Primary language | TypeScript |
-| Interface        | HTML       |
+| Layer                  | Technology                       |
+| ---------------------- | -------------------------------- |
+| App foundation         | Electron                         |
+| Primary language       | TypeScript                       |
+| Interface              | HTML                             |
+| Linting and formatting | EditorConfig + ESLint + Prettier |
