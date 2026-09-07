@@ -1,6 +1,6 @@
+import path from "node:path";
 import { BrowserWindow } from "electron";
 import { calculateWindowSize } from "./utils";
-import path from "node:path";
 
 export const createMainWindow = () => {
     const mainWindow = new BrowserWindow({
@@ -9,8 +9,8 @@ export const createMainWindow = () => {
         webPreferences: {
             contextIsolation: true,
             nodeIntegration: false,
-            sandbox: true,
-        },
+            sandbox: true
+        }
     });
 
     mainWindow.once("ready-to-show", () => mainWindow.show());

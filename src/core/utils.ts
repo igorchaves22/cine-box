@@ -3,7 +3,7 @@ import { WINDOW_ASPECT_RATIO, WINDOW_WIDTH_RATIO } from "./constants";
 
 export const calculateWindowSize = () => {
     const {
-        workArea: { width: screenWidth },
+        workArea: { width: screenWidth }
     } = screen.getPrimaryDisplay();
 
     const width = Math.round(screenWidth * WINDOW_WIDTH_RATIO);

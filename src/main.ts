@@ -1,9 +1,5 @@
 import { app } from "electron";
-import {
-    createMainWindow,
-    ensureSingleInstance,
-    registerAppLifecycle,
-} from "./core";
+import { createMainWindow, ensureSingleInstance, registerAppLifecycle } from "./core";
 
 if (ensureSingleInstance()) {
     registerAppLifecycle();
