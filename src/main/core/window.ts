@@ -3,10 +3,12 @@ import { app, BrowserWindow } from "electron";
 import { calculateWindowSize, setupContentSecurityPolicy } from "./utils";
 
 export const createMainWindow = () => {
+    const preloadPath = path.join(__dirname, "../preload/index.js");
     const mainWindow = new BrowserWindow({
         ...calculateWindowSize(),
         show: false,
         webPreferences: {
+            preload: preloadPath,
             contextIsolation: true,
             nodeIntegration: false,
             sandbox: true

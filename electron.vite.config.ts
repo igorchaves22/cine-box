@@ -8,6 +8,11 @@ export default defineConfig({
             outDir: "dist/main"
         }
     },
+    preload: {
+        build: {
+            outDir: "dist/preload"
+        }
+    },
     renderer: {
         build: {
             outDir: "dist/renderer"

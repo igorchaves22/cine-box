@@ -5,6 +5,13 @@
         "output": "release"
     },
     "files": ["dist/**/*", "!dist/**/*.map", "package.json"],
+    "asarUnpack": ["**/node_modules/better-sqlite3/**/*"],
+    "extraResources": [
+        {
+            "from": "src/main/database/migrations",
+            "to": "migrations"
+        }
+    ],
     "electronLanguages": ["en-US"],
     "win": {
         "target": "nsis"

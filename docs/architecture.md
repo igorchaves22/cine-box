@@ -11,5 +11,6 @@ This project is a self-contained desktop application responsible for managing an
 | ---------------------- | -------------------------------- |
 | App foundation         | Electron                         |
 | Primary language       | TypeScript                       |
+| Database               | SQLite + Drizzle ORM             |
 | Interface              | Vite + ReactJS + TailwindCSS     |
 | Linting and formatting | EditorConfig + ESLint + Prettier |
